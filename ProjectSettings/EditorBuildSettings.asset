@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Character/Scenes/Character.unity
+    guid: dca39ea682e7ddd47916a2d3e93e975f
+  - enabled: 0
+    path: Assets/Character/Scenes/MainMenu.unity
+    guid: ddc1f7f037ef2204bba2a0c7c1a7ad93
+  - enabled: 1
+    path: Assets/RollerBall/RollerBall.unity
+    guid: 467ca72f62169894296bc783d64385d6
   m_configObjects: {}
