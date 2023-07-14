@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 12.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 744795713628375743}
   m_RootOrder: 1
@@ -152,11 +153,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 196112, guid: fae64e3ba43f7904ba622059763126e1, type: 3}
   m_PrefabInstance: {fileID: 744795713628222007}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &744795713628375743 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 440456, guid: fae64e3ba43f7904ba622059763126e1, type: 3}
-  m_PrefabInstance: {fileID: 744795713628222007}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &-7874026187711567296
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -215,7 +211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathPrefab: {fileID: 6083085143537790995, guid: de4fcdf73ff33dd409233969cae01415, type: 3}
   destroyOnDeath: 1
-  maxHealth: 100
+  maxHealth: 50
+  destroyRoot: 0
 --- !u!114 &4759083393781347523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +242,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  oneTime: 1
+--- !u!4 &744795713628375743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 440456, guid: fae64e3ba43f7904ba622059763126e1, type: 3}
+  m_PrefabInstance: {fileID: 744795713628222007}
+  m_PrefabAsset: {fileID: 0}

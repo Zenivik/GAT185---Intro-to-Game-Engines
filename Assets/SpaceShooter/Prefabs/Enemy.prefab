@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: -2.37, z: 16.6}
   m_LocalScale: {x: 1, y: 1, z: 180}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3632620941092485596}
   m_RootOrder: 1
@@ -184,11 +185,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 163364, guid: 7111b43de008a9d4aade063a6b5c70ef, type: 3}
   m_PrefabInstance: {fileID: 3632620941092187410}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3632620941092485596 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 496846, guid: 7111b43de008a9d4aade063a6b5c70ef, type: 3}
-  m_PrefabInstance: {fileID: 3632620941092187410}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &495478342659219687
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -215,6 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 25
+  oneTime: 1
 --- !u!114 &-1242323732645969491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathPrefab: {fileID: 100000, guid: f881607407b15cc46b24d6bda799037a, type: 3}
   destroyOnDeath: 1
-  maxHealth: 100
+  maxHealth: 50
+  destroyRoot: 0
 --- !u!114 &-604607832431636471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,3 +275,8 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 1}
   speed: 30
   space: 1
+--- !u!4 &3632620941092485596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 496846, guid: 7111b43de008a9d4aade063a6b5c70ef, type: 3}
+  m_PrefabInstance: {fileID: 3632620941092187410}
+  m_PrefabAsset: {fileID: 0}
